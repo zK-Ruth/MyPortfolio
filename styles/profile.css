@@ -277,4 +277,12 @@
         top: -10%;
         left: 6%;
     }
-  }
+    .profile-picture {
+        margin-left: 45px;
+    }
+    .introduction {
+        font-size: 166%;
+        line-height: 45px;
+        margin-left: 65px;
+    }
+}

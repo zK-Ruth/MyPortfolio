@@ -1,0 +1,273 @@
+.profile-container {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+    
+    flex-wrap: wrap;
+    flex-shrink: 0;
+
+    padding-top: 140px;
+    padding-bottom: 180px;
+
+    background-image: url('/media/profile/square.PNG');
+    background-size: 30px;
+
+    padding-left: 2%;
+    padding-right: 3%;
+
+    position: relative;
+}
+@media (max-width: 800px) {
+    .profile-container {
+        padding-top: 170px;
+    }
+}
+@media (max-width: 644px) {
+    .profile-container {
+        padding-top: 60px;
+        padding-bottom: 100px;
+    }
+}
+
+/*The 2 blocks inside the main profile container*/
+.profile-picture-container {
+    flex: 1;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 10px;
+
+    position:relative;
+}
+.profile-details {
+    flex: 1;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 400px;
+
+    flex-shrink: 0;
+}
+/**/
+
+.facts {
+    position: absolute;
+    top: -8%;
+    left: 20%;
+
+    display: flex;
+    flex-direction: column;
+}
+.highlights {
+    width: 180px;
+    height: 62px;
+    
+    padding-right: 5px;
+    margin-bottom: 10px;
+
+    color: rgb(39, 3, 54);
+    background-color: rgb(240, 209, 255);
+    opacity: 0.85;
+
+    border-radius: 5px;
+
+    font-weight: 700;
+    font-size: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.highlights .dash {
+    margin-right: 15%;
+    margin-left: 15%;
+
+    font-size: 35px;
+    color:rgb(130, 30, 177);
+
+    text-align: left;
+}
+@media (max-width: 645px){
+    .highlights {
+        height: 50px;
+        font-size: 16px;
+    }
+    .facts {
+        top: -20%;
+    }
+}
+
+.profile-picture {
+    margin-top: 60px;
+    
+    width: 43%;
+    border-radius: 35%;
+    border: 2px solid rgb(196, 110, 207);
+}
+@media (max-width: 1500px){
+    .profile-picture{
+        width: 50%;
+    }
+    .facts {
+        top: -25%;
+    }
+}
+@media (max-width: 1010px){
+    .profile-picture{
+        width: 50%;
+    }
+    .highlights {
+        height: 45px;
+        font-size: 17px;
+    }
+}
+@media(max-width: 800px){
+    .profile-container {
+        flex-direction: column;
+    }
+}
+
+.introduction {
+    font-size: 220%;
+    font-weight: 500;
+    color: white;
+    opacity: 0.9;
+
+    display: block;
+
+    margin-top: 40px;
+    margin-bottom: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+
+
+}
+.introduction .name {
+    font-size: 250%;    
+    font-weight: 700;
+
+    color:rgb(226, 164, 255);
+}
+.introduction .full-name {
+    font-size: 250%;
+    font-weight: 700;
+}
+@media (max-width: 645px){
+    .introduction .name {
+        font-size: 150%;    
+        font-weight: 700;
+    }
+    .introduction .full-name {
+        font-size: 150%;
+        font-weight: 700;
+    }
+}
+
+.socials {
+    display: flex;
+
+    margin-top: 3%;
+}
+.socials img{
+    width: 40px;
+    margin: 8px;
+
+    border-color: white;
+}
+.socials img:hover {
+    filter: brightness(0.55);
+}
+
+
+.techstack-container {
+    height: 170px;
+    background-color: rgb(200, 81, 255);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    margin-bottom: 2%;
+}
+
+.tech {
+    display: flex;
+
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 24px;
+
+    margin-right: 5%;
+    margin-left: 5%;
+
+    opacity: 0.9;
+}
+@media (max-width: 800px) {
+    .tech {
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+}
+    .tech-icon {
+        height: 55px;
+    }
+    .tech-name {
+        margin-top: 12%;
+        margin-left: 3%;
+
+        font-weight: bold;
+        font-size: 20px
+    }
+
+@media (max-width: 650px) {
+    .tech-icon {
+        height: 45px;
+    }
+    .tech-name {
+        margin-top: 12%;
+        margin-left: 3%;
+    
+        font-weight: bold;
+        font-size: 14px
+    }
+}
+
+/*Mobile Screen Specifics*/
+@media (max-width: 644px) and (min-width: 400px) {
+    .profile-picture-container {
+        margin-top: 40px;
+    }
+    .facts {
+        top: -20%;
+    }
+    .highlights {
+        font-size: 18px;
+        opacity: 0.76;
+    }
+    .introduction {
+        font-size: 150%;
+        font-weight: 500;
+    }
+    .introduction .name {
+        font-size: 200%;    
+        font-weight: 700;
+    }
+    .introduction .full-name {
+        font-size: 200%;
+        font-weight: 700;
+    }
+}

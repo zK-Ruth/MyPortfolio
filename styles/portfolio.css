@@ -1,0 +1,264 @@
+/* **** Tab Section **** */
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+
+    font-family: inherit;
+
+    justify-content: center;
+
+    position: relative;
+}
+.tabs-label {
+    padding: 10px 16px;
+    color: rgb(63, 47, 68);
+    font-weight: 600;
+
+    cursor: pointer;
+}
+.tabs-radio {
+    display: none;
+}
+.tabs-radio:checked+.tabs-label {
+    font-weight: 700;
+
+    border-radius: 8px;
+    border-bottom: 3px solid rgb(142, 38, 151);
+}
+.tab-content {
+    display: none;
+    position: relative;
+    
+    order: 1;
+    width: 100%;
+}
+.tabs-radio:checked+.tabs-label+.tab-content {
+    display: initial;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    margin-right: 5%; 
+    margin-left: 5%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+
+}
+.project-picture-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.img-bg{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+
+    max-width: 100%;
+    width: 70%;
+    height: calc(48% - 0px);
+
+    border-radius: 15px;
+
+    opacity: 0.7;
+}
+@media(min-width: 1600px){
+    .img-bg{
+        top: -7%;
+        left: 10%;
+    
+        max-width: 100%;
+        width: 70%;
+        height: calc(95% - 0px);
+    }
+}
+@media(min-width: 1400px) and (max-width: 1599px){
+    .img-bg{
+        top: 5%;
+        left: 12%;
+    
+        max-width: 100%;
+        width: 70%;
+        height: calc(80% - 0px);
+    }
+}
+@media(min-width: 1200px) and (max-width: 1384px){
+    .img-bg{
+        top: 10%;
+        left: 10%;
+    
+        max-width: 100%;
+        width: 70%;
+        height: calc(70% - 0px);
+    }
+}
+
+.project-picture {
+    max-width: 100%;
+    width: 70%;
+
+    border-radius: 15px;
+    z-index: 1;
+}
+.top-picture {
+    position: absolute;
+    top: -20%;
+    right: 10%;
+
+    max-width: 100%;
+    width: 55%;
+
+    border-radius: 15px;
+
+    z-index: 1;
+}
+
+.project-information {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    
+    margin-bottom: 10%;
+}
+.description {
+    font-size: 150%;
+    font-weight: 600;
+    color: rgb(111, 90, 117);
+
+    line-height: 50px;
+    margin-right: 8%;
+}
+.demo {
+    margin-top: 5%;
+    border-radius: 4px;
+    border-style: solid;
+    
+    max-width: 100%;
+    width: 40%;
+    height: 50px;
+
+    font-size: 130%;
+    font-weight: 600;
+
+    background-color: rgb(231, 187, 243);
+    border-color: rgb(220, 144, 241);
+}
+.demo a {
+    color: rgb(94, 57, 104);
+}
+.demo:hover {
+    cursor: pointer;
+    background-color: rgb(227, 152, 248);
+}
+
+@media (max-width: 650px){
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+    .demo {
+        margin-top: 10px;
+        align-self: center;
+    }
+    .project-picture {
+        width: 70%;
+    }
+    .description {
+        margin-left: 8%;
+        font-size: 120%;
+
+        line-height: 150%;
+    }
+    .img-bg{
+        position: absolute;
+        top: -7%;
+        left: 10%;
+    
+        max-width: 100%;
+        width: 70%;
+        height: calc(100% - 0px);
+    
+        border-radius: 15px;
+    }
+}
+@media (min-width: 650px) and (max-width: 1100px){
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+    .project-information {
+        margin-bottom: 12%;
+    }
+    .description {
+        margin-left: 10%;
+        margin-top: 50px;
+        font-size: 140%;
+
+        line-height: 200%;
+    }
+    .project-picture-container {
+        margin-top: 2%;
+        margin-bottom: 0%;
+    }
+    .demo {
+        margin-top: 12px;
+        margin-bottom: 3%;
+        align-self: center;
+    }
+    .tab-content {
+        margin-top: 28px;
+    }
+    .img-bg{
+        position: absolute;
+        top: -7%;
+        left: 10%;
+    
+        max-width: 100%;
+        width: 70%;
+        height: calc(100% - 0px);
+    
+        border-radius: 15px;
+    }
+}
+ 
+/*Mobile Screen Specifics*/
+@media(max-width: 550px) {
+    .description {
+        margin-left: 10%;
+        margin-top: 10px;
+        font-size: 100%;
+
+        line-height: 160%;
+    }
+    .demo {
+        margin-top: 10px;
+        margin-bottom: 15%;
+        font-size: 100%;
+        width: 40%;
+        height: 40px;
+    }
+    .project-picture-container {
+        margin-top: -6%;
+        margin-bottom: 3%;
+    }
+    .img-bg{
+        position: absolute;
+        top: -7%;
+        left: 10%;
+    
+        max-width: 100%;
+        width: 70%;
+        height: calc(100% - 0px);
+    
+        border-radius: 15px;
+    }
+    .tab-content {
+        margin-top: 50px;
+    }
+}

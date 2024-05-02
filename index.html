@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/profile.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/portfolio.css">
+    <link rel="stylesheet" href="styles/footer.css">
+
+    <title>Moises - Dev Portfolio</title>
+</head>
+
+<body>
+    <!--Header with 2 sections (pic and buttons)-->
+    <header id="myHeader" class="header">
+        <div class="left-section">
+            <div class="header-img-container">
+                <a href="#home">
+                    <img class="logo-img" src="media//header/home-icon-upt.svg">                    
+                </a>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="nav-button-container">
+                <button class="nav-button" onclick="scrollToSection('about')">About</button>
+                <button class="nav-button" onclick="scrollToSection('projects')">Projects</button>
+                <button class="nav-button" onclick="scrollToSection('contact')">Contact</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- **** Home section **** -->
+<section id="home">
+    <!--Profile area (introduction, pic, techstack, highlights)-->
+    <div class="profile-container">
+        <div class="profile-picture-container">
+            <img class="profile-picture" src="media/profile/my-pic(low-quality).PNG">
+                <div class="facts">
+                    <div class="highlights">
+                        <span class="dash">- </span>Great Teamwork
+                    </div>
+                    <div class="highlights">
+                        <span class="dash">- </span>Time Management
+                    </div>
+                    <div class="highlights">
+                        <span class="dash">- </span>Fast Learner &nbsp;
+                    </div>
+                </div>
+        </div>
+        <div class="profile-details">
+            <p class="introduction">
+                Greetings! My name is <br> <span class="name">Moises </span><span class="full-name">D. Cruz</span> 
+                <br>An Aspiring Developer and CS Graduate
+            </p>
+            <!--personal socials-->
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/moises-daniel-cruz-cordero-b2052127b/">
+                    <img src="media/profile/linkedin-icon.svg">
+                </a>
+                <a href="https://github.com/zK-Ruth">
+                    <img src="media/profile/github-icon.svg">
+                </a>
+                <a href="https://www.facebook.com/moises.cruzcordero.7/">
+                    <img src="media/profile/facebook-icon.svg">
+                </a>
+                <a href="mailto:mdanielcruz66@gmail.com">
+                    <img src="media/profile/email-icon.svg">
+                </a>
+            </div>
+        </div>
+
+        <img class="float-floating" src="media/assets/float-floating.svg">
+        <img class="float-curve" src="media/assets/float-linecurve.svg">
+        <img class="float-spiral" src="media/assets/float-spiral.svg">
+        <img class="float-firework" src="media/assets/float-firework.svg">
+        <img class="float-firework-2" src="media/assets/float-firework.svg">
+        <img class="float-firework-3" src="media/assets/float-firework.svg">
+        <img class="float-splash" src="media/assets/float-splash.svg">
+    </div>
+    <!--techstack information-->
+    <div class="techstack-container">
+        <div class="tech">
+            <img class="tech-icon" src="media/profile/html-icon.svg">
+            <p class="tech-name">HTML</p>
+        </div>
+        <div class="tech">
+            <img class="tech-icon" src="media/profile/css-icon.svg">
+            <p class="tech-name">CSS</p>
+        </div>
+            <div class="tech">
+                <img class="tech-icon" src="media/profile/js-icon.svg">
+                <p class="tech-name">Javascript</p>
+            </div>
+        <div class="tech">
+            <img class="tech-icon" src="media/profile/sql-icon.svg">
+            <p class="tech-name">SQL</p>
+        </div>
+        <div class="tech">
+            <img class="tech-icon" src="media/profile/cpp-icon.svg">
+            <p class="tech-name">C++</p>
+        </div>
+        <div class="tech">
+            <img class="tech-icon" src="media/profile/boostrap-icon.svg">
+            <p class="tech-name">Bootstrap</p>
+        </div>
+
+        <img class="float-tornado" src="media/assets/float-tornado.svg">
+    </div>
+</section>
+
+
+<!-- **** About Me Section ****-->
+<section id="about">
+
+    <div class="title-container">
+        <img class="title-decor" src="media/about-and-projects/triangle-png-42424.png">
+        <p class="title">ABOUT ME</p>
+        <img class="title-decor" src="media/about-and-projects/triangle-png-42424.png">
+        <hr class="title-decor-line">
+    </div>
+
+    <div class="about-grid">
+        <div class="about">
+            <p class="professional">
+                I am a Computer Science graduate with a strong passion for Web Development
+                and Software Engineering. I am dedicated to leveraging my creativity to craft
+                functional and visually appealing websites and applications. With a commitment
+                to continuous learning, I thrive on expanding my skill set and delivering
+                professional, high-quality solutions.
+            </p>
+            <p class="personal" style="position: relative;">
+                Outside of my professional endeavors, I am an avid reader and enjoy honing my coding
+                skills. I also find relaxation in watching TV shows and am constantly
+                exploring new ideas for future projects.
+                <img class="float-curve-2" src="media/assets/float-linecurve.svg">
+            </p>
+            <p class="label">
+                Email
+            </p >
+            <p class="details">
+                mdanielcruz66@gmail.com
+            </p>
+            <p class="label">
+                Employment
+            </p>
+            <p class="details">
+                Open
+            </p>
+        </div>
+        <div class="about-picture-container">
+            <img class="about-pic" src="media/about-and-projects/about-me.jpg">
+        </div>
+        
+    </div>
+</section>
+    
+<!-- **** Porfolio section (projects, demo buttons, etc) **** -->
+<section id="projects">
+    <div class="page-break"></div>
+
+    <div class="title-container">
+        <img class="title-decor" src="media/about-and-projects/triangle-png-42424.png">
+        <p class="title">PORTFOLIO</p>
+        <img class="title-decor" src="media/about-and-projects/triangle-png-42424.png">
+        <hr class="title-decor-line">
+    </div>
+
+    <!--Tabs to switch between main projects and minor projects-->
+    <div class="tabs">
+        <input type="radio" class="tabs-radio" name="projects" id="tab-1" checked>
+        <label for="tab-1" class="tabs-label">Main Projects</label>
+        <div class="tab-content">
+            <img class="float-commet" src="media/assets/float-commet.svg">
+            <img class="float-spiral-2" src="media/assets/float-spiral.svg">
+            <img class="float-firework-4" src="media/assets/float-firework.svg"> 
+            <!--Main Project Portfolio-->
+            <div class="portfolio-grid">
+                <div class="project-picture-container">
+                    <img class="img-bg" src="media/assets/image-background.PNG">
+                    <img class="project-picture" src="media/about-and-projects/project-1-YT.PNG">
+                </div>
+                <div class="project-information">
+                    <p class="description">      
+                        I created a YouTube clone, which replicates the main
+                        page's recommended feed. I ensured that the clone maintains its interactivity
+                        and user engagement. This project allowed me to apply
+                        fundamental front-end techniques, resulting in a faithful
+                        recreation of my own YouTube's main page experience.
+                    </p>
+                    <button class="demo"><a href="https://zk-ruth.github.io/MyMainPageYT/" target="_blank">View Demo</a></button>
+                </div>
+        
+                <div class="project-picture-container">
+                    <img class="img-bg" src="media/assets/image-background.PNG">
+                    <img class="project-picture" src="media/about-and-projects/project-3-SQPCPP.PNG">
+                </div>
+                <div class="project-information">
+                    <p class="description">      
+                        Developed a user-friendly Visual Studio application using 
+                        C++ and MySQL, enabling users to perform basic SQL queries. 
+                        The application features C++ as its backend, providing a 
+                        seamless and efficient interface for database interactions.
+                    </p>
+                    <button class="demo" style="background-color: rgb(200, 130, 219); color: rgb(81, 49, 90); opacity: 0.7;">Demo Not Available</button>
+                </div>
+        
+                <div class="project-picture-container">
+                    <img class="img-bg" src="media/assets/image-background.PNG">
+                    <img class="project-picture" src="media/about-and-projects/project-2-Celushop.PNG">
+                </div>
+                <div class="project-information">
+                    <p class="description">      
+                        This website was developed as part of a one-week interactive 
+                        website building challenge. It is an e-commerce platform 
+                        featuring essential functionalities such as adding items to 
+                        the cart, viewing item details, and receiving promotional 
+                        offers via pop-ups.
+                    </p>
+                    <button class="demo"><a href="https://zk-ruth.github.io/CeluShop/" target="_blank">View Demo</a></button>
+                </div>
+            </div>
+        </div>
+        
+        <input type="radio" class="tabs-radio" name="projects" id="tab-2">
+        <label for="tab-2" class="tabs-label">Minor Projects</label>
+        <div class="tab-content">
+            <img class="float-splash-2" src="media/assets/float-splash.svg">
+            <img class="float-firework-4" src="media/assets/float-firework.svg">        
+            <!--  ** Minor Projects ** -->
+            <div class="portfolio-grid">
+                <div class="project-picture-container">
+                    <img class="project-picture" src="media/about-and-projects/project-1-minor.PNG" style="margin-bottom: 4%;">
+                </div>
+                <div class="project-information" style="justify-content: center;">
+                    <p class="description">      
+                        This project is a recreation of the classic Hangman 
+                        game developed using C++ within the Visual Studio 
+                        environment. ASCII art is utilized to create an 
+                        engaging and visually appealing user interface.
+                    </p>
+                </div>
+        
+                <div class="project-picture-container">
+                    <img class="project-picture" src="media/about-and-projects/project-3-minor1.PNG">
+                    <img class="top-picture" src="media/about-and-projects/project-3-minor2.PNG">
+                </div>
+                <div class="project-information">
+                    <p class="description">      
+                        Developed the foundational structure for a turn-based 
+                        RPG fighting system. The main objective of this project 
+                        was to reinforce and deepen understanding of 
+                        Object-Oriented Programming (OOP) principles. It 
+                        encompasses various functionalities including status 
+                        effects, summonings, and the implementation of pointers 
+                        for enhanced efficiency.
+                    </p>
+                </div>
+        
+                <div class="project-picture-container">
+                    <img class="project-picture" src="media/about-and-projects/project-2-minor.PNG">
+                </div>
+                <div class="project-information" style="justify-content: center;">
+                    <p class="description">      
+                        The classic Tic Tac Toe game was one of my initial 
+                        projects, marking my entry into C++ development and 
+                        igniting my passion for programming.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+</section>
+
+<!-- **** Footer area (contact info, area, contact) **** -->
+<section id="contact" style="background: linear-gradient(90deg, rgba(235,214,236,1) 15%, rgba(230,105,246,1) 100%); position: relative;">
+    <button class="return-home" onclick="scrollToSection('home')">
+        <img class="up-arrow" src="media/assets/up-arrow.svg">
+    </button>
+
+    <div class="title-container">
+        <img class="title-decor" src="media/about-and-projects/triangle-png-42424.png">
+        <p class="title">CONTACT</p>
+        <img class="title-decor" src="media/about-and-projects/triangle-png-42424.png">
+        <hr class="title-decor-line">
+    </div>
+
+    <div class="footer-grid">
+        <div class="location-section">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12853.886507842257!2d-67.00818651128833!3d18.444196416423917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c02c084eb684bf9%3A0xe46303821354b541!2sGalateo%20Alto%2C%20Isabela!5e0!3m2!1sen!2spr!4v1714155568842!5m2!1sen!2spr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="contact-section">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact">
+                <div class="contact-title">
+                    <h2>Get in touch!</h2>
+                    <hr>
+                </div>
+                <div class="contact-inputs">
+                    <input type="hidden" name="access_key" value="5159b033-3b9c-4ff3-a094-e69ef19dc99d">
+                    <input type="text" name="name" placeholder="Your Name*" required>
+                    <input type="email" name="email" placeholder="Your Email*" required>
+                    <textarea name="message" placeholder="Your Message*" required></textarea>
+                </div>
+                <button class="submit-button" type="submit">Submit<img class="send-icon" src="media/assets/send-icon.svg"></button>
+            </form>
+        </div>
+     </div>
+</section>
+
+
+<script src="script/general.js"></script>
+
+</body>
+
+</html>

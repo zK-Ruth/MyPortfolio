@@ -1,0 +1,195 @@
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    margin-right: 5%; 
+    margin-left: 5%;
+   
+    position: relative;
+
+    padding-bottom: 5%;
+}
+.location-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+/* .location{
+    height: 90%;
+    border: solid;
+    border-color: black;
+} */
+.location-section iframe {
+    border: solid;
+    border-width: 1px;
+    border-color: rgba(255, 0, 221, 0.349);
+    border-radius: 5px;
+}
+.map {
+    width: 80%;
+    height: 100%;
+}
+@media (max-width: 1100px){
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+    .map {
+        height: 400px;
+    }
+}
+@media (max-width: 600px){
+    .map {
+        height: 300px;
+    }
+}
+
+.contact-section {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.contact-title h2 {
+ font-size: 200%;
+ font-weight: 600;  
+
+ margin-bottom: 15px;
+}
+.contact-title hr {
+    border: none;
+    width: 110%;
+    height: 5px;
+    background-color: black;
+    border-radius: 10px;
+
+    margin-bottom: 20px;
+}
+
+.contact-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contact-inputs textarea::placeholder,
+.contact-inputs input::placeholder{
+    font-family: Roboto, Arial;
+    font-style: italic;
+    font-size: 16px;
+}
+.contact-inputs input,
+.contact-inputs textarea {
+    font-family: inherit;
+    font-size: 15px;
+
+    width: 100%;
+
+    margin-bottom: 3%;
+    padding: 15px;
+    
+    border-radius: 20px;
+    border: 1px solid #ccc;
+
+    box-sizing: border-box;
+}
+
+.contact .contact-inputs input:focus,
+.contact .contact-inputs textarea:focus {
+    border: 2px solid rgb(200, 81, 255) !important;
+    outline: none;
+}
+.contact .contact-inputs input:hover,
+.contact .contact-inputs textarea:hover {
+    border: 2px solid rgb(229, 172, 255);
+    outline: none;
+}
+
+.contact textarea {
+    padding-bottom: 100px;
+}
+.submit-button {
+    width: 40%;
+    padding: 12px;
+
+    background-color: rgb(195, 70, 253);
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 600;
+
+    border: none;
+    border-radius: 20px;
+
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.submit-button:hover {
+    background-color: rgb(136, 47, 177);
+    color: rgb(209, 209, 209);
+}
+.send-icon{
+    height: 30px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.up-arrow{
+    height: 50px;
+}
+.return-home{
+    position: absolute;
+    right: 10%;
+    top: -3%;
+
+    background-color: rgb(195, 70, 253);
+
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 100%;
+    border-color: rgb(230, 176, 255);
+
+    cursor: pointer;
+
+    z-index: 4;
+}
+
+
+/*Mobile Screen Specifics*/
+@media(max-width: 550px) {
+    .contact {
+        margin-right: 6%;
+        margin-left: 6%;
+    }
+    .contact-inputs textarea::placeholder,
+    .contact-inputs input::placeholder{
+        font-size: 14px;
+    }
+    .contact-title h2 {
+        font-size: 160%;
+        font-weight: 600;  
+       
+        margin-bottom: 10px;
+    }
+       .contact-title hr {
+        width: 110%;
+        height: 4px;
+        background-color: black;
+        border-radius: 10px;
+    
+        margin-bottom: 15px;
+    }
+    .submit-button {
+        font-size: 15px;
+    }
+    .return-home {
+        display: none;
+    }
+}

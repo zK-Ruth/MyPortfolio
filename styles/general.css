@@ -290,7 +290,7 @@ a, a:active {
       display: none;
     }
   }
-  @media (max-width: 426px) and (min-width: 300px) {
+  @media (max-width: 426px) and (min-width: 0px) {
     body {
         width: 450px;
     }

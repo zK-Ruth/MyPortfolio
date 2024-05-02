@@ -247,7 +247,7 @@
 }
 
 /*Mobile Screen Specifics*/
-@media (max-width: 644px) and (min-width: 300px) {
+@media (max-width: 644px) and (min-width: 427px) {
     .profile-picture-container {
         margin-top: 40px;
     }

@@ -271,3 +271,10 @@
         font-weight: 700;
     }
 }
+
+@media (max-width: 426px) and (min-width: 0px) {
+    .facts {
+        top: -10%;
+        left: 6%;
+    }
+  }
